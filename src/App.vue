@@ -7,7 +7,20 @@
     <router-view/>
   </div>
 </template>
+<script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
 
+export default {
+  name: 'Home',
+  components: {
+    HelloWorld
+  },
+  mounted(){
+    console.log(process.env.VUE_APP_TITLE,'VUE_APP_TITLE111111111')
+  }
+}
+</script>
 <style lang="stylus">
 #app
   font-family Avenir, Helvetica, Arial, sans-serif

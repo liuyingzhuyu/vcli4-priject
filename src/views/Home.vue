@@ -13,6 +13,9 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  mounted(){
+    // console.log(VUE_APP_TITLE,'VUE_APP_TITLE')
   }
 }
 </script>
